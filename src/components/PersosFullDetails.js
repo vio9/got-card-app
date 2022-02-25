@@ -1,14 +1,19 @@
 import React from "react";
+import Nav from "./Nav";
 
-const PersosFullDetails = ({ name, house, gender, image, story }) => {
+const PersosFullDetails = ({ name, house, gender, image, story, isdead }) => {
 	return (
 		<div>
 			<div>
 				<img src={image} alt="image perso" />
 				<h1>{name}</h1>
-				<h2>{house}</h2>
-				<p>{gender}</p>
-				<p>{story}</p>
+				<h2>Maison: {house}</h2>
+				<p>genre : {gender}</p>
+				<p>son histoire en quelques mots : {story}</p>
+				<p>
+					spoiler alert : à la fin du tome 6 ce personnage :
+					{isdead ? "est décédé" : " est toujours en vie"}
+				</p>
 			</div>
 		</div>
 	);

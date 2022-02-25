@@ -3,7 +3,6 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import PersoDetail from "./PersoDetail";
-import PersoFull from "./PersoFull";
 
 const ListPersos = () => {
 	const [persos, setPersos] = useState([]);
@@ -23,10 +22,10 @@ const ListPersos = () => {
 	}, []);
 
 	return (
-		<div>
+		<div className="list-perso-wrapper">
 			{persos.map((item, index) => {
 				return (
-					<div key={index}>
+					<div key={index} className="perso-detail-wrapper">
 						<PersoDetail {...item} />
 						<Link to={`/${item._id}`}>page</Link>
 					</div>

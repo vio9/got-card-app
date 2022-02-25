@@ -1,0 +1,21 @@
+.list-perso-wrapper {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+
+	.perso-detail-wrapper {
+		display: flex;
+		flex-direction: column;
+		margin: 20px;
+		padding: 20px;
+		background-color: rgba(240, 255, 255, 0.651);
+		width: 50rem;
+
+		.perso-detail-image {
+			width: 40%;
+		}
+	}
+}

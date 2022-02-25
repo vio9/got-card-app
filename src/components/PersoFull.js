@@ -1,10 +1,9 @@
 import { useParams } from "react-router-dom";
-import PersoDetail from "./PersoDetail";
 import React from "react";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import PersosFullDetails from "./PersosFullDetails";
+import Nav from "./Nav";
 
 const PersoFull = () => {
 	const { Id } = useParams();
@@ -24,6 +23,7 @@ const PersoFull = () => {
 	}, []);
 	return (
 		<div>
+			<Nav />
 			{persos
 				.filter((item) => item._id === Id)
 				.map((item, index) => {
