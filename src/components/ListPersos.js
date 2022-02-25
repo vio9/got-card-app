@@ -1,6 +1,9 @@
 import React from "react";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import PersoDetail from "./PersoDetail";
+import PersoFull from "./PersoFull";
 
 const ListPersos = () => {
 	const [persos, setPersos] = useState([]);
@@ -21,12 +24,12 @@ const ListPersos = () => {
 
 	return (
 		<div>
-			{persos.map((item) => {
+			{persos.map((item, index) => {
 				return (
-					<ul>
-						<li>{item.name}</li>
-						<li>{item.house}</li>
-					</ul>
+					<div key={index}>
+						<PersoDetail {...item} />
+						<Link to={`/${item._id}`}>page</Link>
+					</div>
 				);
 			})}
 		</div>

@@ -1,11 +1,16 @@
-import ListPersos from "./components/ListPersos";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import PersoFull from "./components/PersoFull";
+import Home from "./pages/Home";
+import PersoDetail from "./components/PersoDetail";
 
 function App() {
 	return (
-		<div className="App">
-			<h1>Bienvenue! </h1>
-			<ListPersos />
-		</div>
+		<BrowserRouter>
+			<Routes>
+				<Route exact path="/" element={<Home />} />
+				<Route path="/:Id" element={<PersoFull />} />
+			</Routes>
+		</BrowserRouter>
 	);
 }
 
