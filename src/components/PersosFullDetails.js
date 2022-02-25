@@ -3,11 +3,11 @@ import Nav from "./Nav";
 
 const PersosFullDetails = ({ name, house, gender, image, story, isdead }) => {
 	return (
-		<div>
-			<div>
-				<img src={image} alt="image perso" />
-				<h1>{name}</h1>
-				<h2>Maison: {house}</h2>
+		<div className="perso-full-detail-wrapper-sub">
+			<img src={image} alt="image perso" />
+			<h1>{name}</h1>
+			<h2>Maison: {house}</h2>
+			<div className="para-wrapper">
 				<p>genre : {gender}</p>
 				<p>son histoire en quelques mots : {story}</p>
 				<p>

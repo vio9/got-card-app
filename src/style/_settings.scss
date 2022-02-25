@@ -20,6 +20,17 @@ html {
 		color: rgb(54, 54, 54);
 		background-color: #e8f1f7e8;
 
+		.nav-wrapper {
+			display: flex;
+			flex-direction: column;
+			padding: 20px;
+			align-items: center;
+			color: aliceblue;
+			.link-to-style {
+				color: aliceblue;
+				text-decoration: none;
+			}
+		}
 		.home-wrapper {
 			background: url("https://www.pixelstalk.net/wp-content/uploads/2015/11/Game-Of-Thrones-Maps-Wallpaper.jpg")
 				no-repeat center center fixed;

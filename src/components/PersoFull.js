@@ -22,7 +22,7 @@ const PersoFull = () => {
 		getPersos();
 	}, []);
 	return (
-		<div>
+		<div className="perso-full-detail-wrapper">
 			<Nav />
 			{persos
 				.filter((item) => item._id === Id)

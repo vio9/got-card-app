@@ -27,7 +27,7 @@ const ListPersos = () => {
 				return (
 					<div key={index} className="perso-detail-wrapper">
 						<PersoDetail {...item} />
-						<Link to={`/${item._id}`}>page</Link>
+						<Link to={`/${item._id}`}>PLus de détail par ici :) </Link>
 					</div>
 				);
 			})}

@@ -1,0 +1,31 @@
+.perso-full-detail-wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background: url("https://images.alphacoders.com/225/225863.png") no-repeat
+		center center fixed;
+	background-size: cover;
+	padding: 10px;
+
+	.perso-full-detail-wrapper-sub {
+		width: 100%;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		p,
+		h1,
+		h2 {
+			color: rgb(228, 228, 228);
+		}
+		p {
+			font-size: 1.5em;
+		}
+		img {
+			width: 70%;
+			display: flex;
+		}
+		.para-wrapper {
+			width: 70%;
+		}
+	}
+}
