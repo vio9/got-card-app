@@ -27,13 +27,23 @@ html {
 			align-items: center;
 			color: aliceblue;
 			.link-to-style {
-				color: rgb(180, 173, 173);
+				color: rgb(66, 62, 62);
 				text-decoration: none;
 				font-size: 1.6em;
+				padding: 20px;
 				font-weight: 600;
+				background-color: rgba(248, 244, 238, 0.767);
+				border-radius: 8px;
 			}
 			.link-to-style:hover {
-				color: #5f7985;
+				color: #171f2e;
+				box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+					rgba(179, 177, 177, 0.15) 0px -36px 30px 0px inset,
+					rgba(165, 162, 162, 0.1) 0px -79px 40px 0px inset,
+					rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(95, 94, 94, 0.09) 0px 4px 2px,
+					rgba(129, 125, 125, 0.09) 0px 8px 4px,
+					rgba(141, 136, 136, 0.09) 0px 16px 8px,
+					rgba(0, 0, 0, 0.09) 0px 32px 16px;
 			}
 		}
 		.home-wrapper {
