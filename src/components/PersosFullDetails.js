@@ -1,6 +1,6 @@
 import React from "react";
 
-// view page character infos
+// component in the persofull component !
 
 const PersosFullDetails = ({ name, house, race, image, story, isdead }) => {
 	return (
