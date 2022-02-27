@@ -29,6 +29,11 @@ html {
 			.link-to-style {
 				color: aliceblue;
 				text-decoration: none;
+				font-size: 1.2em;
+				font-weight: 400;
+			}
+			.link-to-style:hover {
+				color: rgb(55, 216, 245);
 			}
 		}
 		.home-wrapper {

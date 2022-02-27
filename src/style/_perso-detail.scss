@@ -5,17 +5,37 @@
 	justify-content: flex-start;
 	align-items: stretch;
 	align-content: stretch;
+	margin: 30px;
+
+	h1,
+	h2 {
+		padding: 3px;
+		margin: 5px;
+		color: rgb(49, 48, 48);
+	}
 
 	.perso-detail-wrapper {
 		display: flex;
 		flex-direction: column;
 		margin: 20px;
-		padding: 20px;
-		background-color: rgba(240, 255, 255, 0.651);
-		width: 50rem;
+		padding: 60px 5px 15px 0;
+		background-color: rgba(240, 255, 255, 0.863);
+		width: 34rem;
+		border-radius: 9px;
+		align-items: center;
 
 		.perso-detail-image {
-			width: 40%;
+			width: 60%;
+		}
+
+		.linkto-perso-detail {
+			text-decoration: none;
+			color: rgb(54, 52, 52);
+			font-weight: 500;
+			margin: 10px;
+		}
+		.linkto-perso-detail:hover {
+			color: rgb(24, 81, 114);
 		}
 	}
 }

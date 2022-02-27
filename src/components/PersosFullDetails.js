@@ -1,18 +1,23 @@
 import React from "react";
 import Nav from "./Nav";
 
-const PersosFullDetails = ({ name, house, gender, image, story, isdead }) => {
+const PersosFullDetails = ({ name, house, race, image, story, isdead }) => {
 	return (
 		<div className="perso-full-detail-wrapper-sub">
 			<img src={image} alt="image perso" />
-			<h1>{name}</h1>
-			<h2>Maison: {house}</h2>
+
 			<div className="para-wrapper">
-				<p>genre : {gender}</p>
-				<p>son histoire en quelques mots : {story}</p>
+				<h1>{name}</h1>
+				<h2>Maison : {house}</h2>
 				<p>
-					spoiler alert : à la fin du tome 6 ce personnage :
-					{isdead ? "est décédé" : " est toujours en vie"}
+					<strong>Race :</strong> {race}
+				</p>
+				<p>
+					<strong>son histoire au début des romans :</strong> {story}
+				</p>
+				<p>
+					<strong>spoiler alert :</strong> à la fin du tome 6 ce personnage{" "}
+					{isdead ? "est décédé 🖤" : "est toujours en vie ❤️"}
 				</p>
 			</div>
 		</div>
