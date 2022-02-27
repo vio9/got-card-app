@@ -38,4 +38,23 @@
 			color: rgb(24, 81, 114);
 		}
 	}
+	.perso-detail-wrapper:hover {
+		box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+			rgba(126, 124, 124, 0.15) 0px -36px 30px 0px inset,
+			rgba(90, 89, 89, 0.1) 0px -79px 40px 0px inset,
+			rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(95, 94, 94, 0.09) 0px 4px 2px,
+			rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(63, 62, 62, 0.09) 0px 16px 8px,
+			rgba(0, 0, 0, 0.09) 0px 32px 16px;
+	}
+}
+
+.button-filter-race {
+	width: 20rem;
+	margin-left: 50px;
+	height: 40px;
+	border: none;
+	background-color: #ffffffc4;
+	border-radius: 8px;
+	font-size: 1.2em;
+	padding: 0 5px 0 5px;
 }

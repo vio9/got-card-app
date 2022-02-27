@@ -6,6 +6,7 @@ import PersoDetail from "./PersoDetail";
 
 const ListPersos = () => {
 	const [persos, setPersos] = useState([]);
+	const [humanOnly, setHumanOnly] = useState(false);
 
 	const getPersos = async () => {
 		try {
@@ -21,19 +22,41 @@ const ListPersos = () => {
 		getPersos();
 	}, []);
 
+	function getHumanOnly() {
+		setHumanOnly(!humanOnly);
+	}
 	return (
-		<div className="list-perso-wrapper">
-			{persos.map((item, index) => {
-				return (
-					<div key={index} className="perso-detail-wrapper">
-						<PersoDetail {...item} />
-						<Link to={`/${item._id}`} className="linkto-perso-detail">
-							🏰 Plus de détail par ici
-						</Link>
-					</div>
-				);
-			})}
-		</div>
+		<>
+			<button className="button-filter-race" onClick={getHumanOnly}>
+				Afficher :{humanOnly ? " uniquement les humains" : " tout le monde"}
+			</button>
+			<div className="list-perso-wrapper">
+				{persos
+					.filter((item) => !humanOnly || item.race.includes("humain"))
+					.map((item, index) => {
+						return (
+							<div key={index} className="perso-detail-wrapper">
+								<PersoDetail {...item} />
+								<Link to={`/${item._id}`} className="linkto-perso-detail">
+									🏰 Plus de détail par ici
+								</Link>
+							</div>
+						);
+					})}
+			</div>
+			{/* <div className="list-perso-wrapper">
+				{persos.map((item, index) => {
+					return (
+						<div key={index} className="perso-detail-wrapper">
+							<PersoDetail {...item} />
+							<Link to={`/${item._id}`} className="linkto-perso-detail">
+								🏰 Plus de détail par ici
+							</Link>
+						</div>
+					);
+				})}
+			</div> */}
+		</>
 	);
 };
 
