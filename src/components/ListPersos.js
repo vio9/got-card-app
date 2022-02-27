@@ -44,18 +44,6 @@ const ListPersos = () => {
 						);
 					})}
 			</div>
-			{/* <div className="list-perso-wrapper">
-				{persos.map((item, index) => {
-					return (
-						<div key={index} className="perso-detail-wrapper">
-							<PersoDetail {...item} />
-							<Link to={`/${item._id}`} className="linkto-perso-detail">
-								🏰 Plus de détail par ici
-							</Link>
-						</div>
-					);
-				})}
-			</div> */}
 		</>
 	);
 };

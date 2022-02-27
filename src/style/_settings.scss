@@ -27,13 +27,13 @@ html {
 			align-items: center;
 			color: aliceblue;
 			.link-to-style {
-				color: aliceblue;
+				color: rgb(180, 173, 173);
 				text-decoration: none;
-				font-size: 1.2em;
-				font-weight: 400;
+				font-size: 1.6em;
+				font-weight: 600;
 			}
 			.link-to-style:hover {
-				color: rgb(55, 216, 245);
+				color: #5f7985;
 			}
 		}
 		.home-wrapper {
@@ -42,6 +42,7 @@ html {
 			background-size: cover;
 			display: flex;
 			flex-direction: column;
+			text-align: center;
 		}
 	}
 }

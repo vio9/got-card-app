@@ -1,5 +1,6 @@
 import React from "react";
 
+// detail display on perso list
 const PersoDetail = ({ name, house, image }) => {
 	return (
 		<>

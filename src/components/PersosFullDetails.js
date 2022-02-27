@@ -1,5 +1,6 @@
 import React from "react";
-import Nav from "./Nav";
+
+// view page character infos
 
 const PersosFullDetails = ({ name, house, race, image, story, isdead }) => {
 	return (

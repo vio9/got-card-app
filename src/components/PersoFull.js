@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 import PersosFullDetails from "./PersosFullDetails";
 import Nav from "./Nav";
 
+// page of the character choosen
+
 const PersoFull = () => {
 	const { Id } = useParams();
 	const [persos, setPersos] = useState([]);

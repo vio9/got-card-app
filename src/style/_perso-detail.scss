@@ -5,7 +5,7 @@
 	justify-content: flex-start;
 	align-items: stretch;
 	align-content: stretch;
-	margin: 30px;
+	margin: 25px;
 
 	h1,
 	h2 {
@@ -50,11 +50,59 @@
 
 .button-filter-race {
 	width: 20rem;
-	margin-left: 50px;
+	margin-left: 46px;
 	height: 40px;
 	border: none;
 	background-color: #ffffffc4;
 	border-radius: 8px;
 	font-size: 1.2em;
 	padding: 0 5px 0 5px;
+}
+
+@media only screen and (max-width: 810px) {
+	.list-perso-wrapper {
+		display: flex;
+		flex-direction: column;
+
+		.perso-detail-wrapper {
+			width: 90%;
+
+			.perso-detail-image {
+				width: 85%;
+			}
+		}
+	}
+	.button-filter-race {
+		width: 15em;
+		padding: 5px;
+		height: 70px;
+		margin: 0 auto;
+	}
+	.button-filter-race:active {
+		background-color: rgba(202, 240, 247, 0.712);
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.list-perso-wrapper {
+		display: flex;
+		flex-direction: column;
+
+		.perso-detail-wrapper {
+			width: 90%;
+
+			.perso-detail-image {
+				width: 80%;
+			}
+		}
+	}
+	.button-filter-race {
+		width: 15em;
+		padding: 5px;
+		height: 70px;
+		margin: 0 auto;
+	}
+	.button-filter-race:active {
+		background-color: rgba(202, 240, 247, 0.712);
+	}
 }
